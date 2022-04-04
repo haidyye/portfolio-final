@@ -1,15 +1,3 @@
-var navMenu = document.getElementById("nav-menu")
-var navToggle = document.getElementById("nav-toggle")
-var closeNav = document.getElementById("closeMenu")
-
-navToggle.addEventListener("click" , function(){
-    navMenu.classList.toggle('show')
-})
-
-closeNav.addEventListener("click" , function(){
-    navMenu.classList.remove('show')
-})
-
 var scrollRev = ScrollReveal({
     origin: 'top',
     distance: '80px',
