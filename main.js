@@ -33,6 +33,9 @@ scrollRev.reveal('.skills-title' , {delay : 300})
 scrollRev.reveal('.skill-img' , {delay : 400})
 scrollRev.reveal('.progress-border' , {interval :500})
 
+
+scrollRev.reveal('.work-title' , {delay: 500})
+
 scrollRev.reveal('.parent' , {interval :500})
 
 scrollRev.reveal('.contact' , {interval :500})
