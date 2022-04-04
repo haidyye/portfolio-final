@@ -1,3 +1,84 @@
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+}
+.nav__item{
+ margin: 0 8px;
+}
+.nav__link{
+    padding: 10px;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 5px;
+    position: relative;
+}
+.nav__link:hover{
+    position: relative;
+}
+.nav__link:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color:blue;
+    transition: 5s;
+}
+.close{
+    display: none;
+}
+.navbar-border{
+    border-radius: .6rem;
+    box-shadow: 0px 4px 25px rgb(14 36 49 / 15%);
+}
+
+@media screen and (max-width:768px){
+
+    .close{
+        position: absolute;
+        top: 0;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #0F2431;
+        color: white;
+        width: 60%;
+        height: 100vh;
+        padding: 24px;
+        z-index: 100;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+        margin: 0 !important;
+    }
+    .nav__list{
+        display: flex;
+        flex-direction: column;  
+    }
+    .nav__item{
+      margin: 2rem ;
+    }
+    .show{
+        right: 0 !important;
+    }
+}
+
 .sectionTwoText{
     display: flex;
     justify-content: center;
@@ -54,12 +135,12 @@
        box-shadow: 0px 4px 25px rgb(14 36 49 / 15%);
        padding: .5rem 1rem;
        margin: 10px;
-   
+       box-sizing: border-box;
    }
    .progress-border1::after{
        position: absolute;
        content: "";
-       width: 31rem;
+       width: 90%;
        height: 0.18rem;
        left: 0;
        right: 0;
@@ -67,39 +148,43 @@
        background-color: blue;
        border-radius: .5rem ;
        overflow: hidden ;
+       box-sizing: border-box;
    }
    .progress-border2::after{
        position: absolute;
        content: "";
-       width: 32.8rem;
+       width: 100%;
        height: 0.18rem;
        left: 0;
        right: 0;
        top: 2.9rem;
        background-color: blue;
        border-radius: .5rem ;
+       box-sizing: border-box;
    }
    .progress-border3::after{
        position: absolute;
        content: "";
-       width: 26rem;
+       width: 75%;
        height: 0.18rem;
        left: 0;
        top: 2.9rem;
        right: 0;
        background-color: blue;
        border-radius: .5rem ;
+       box-sizing: border-box;
    }
    .progress-border4::after{
        position: absolute;
        content: "";
-       width: 28rem;
+       width: 90%;
        height: 0.18rem;
        left: 0;
        right: 0;
        top: 2.9rem;
        background-color: blue;
        border-radius: .5rem ;
+       box-sizing: border-box;
    }
    .skills-title h2{
      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
